@@ -105,6 +105,6 @@ To replicate the study, notebooks and scripts should be executed in the followin
 
 5.  **`graph_communities.ipynb`**: Implementation of community detection algorithms, such as Louvain, Girvan-Newman, and InfoMap (subsequently translated as a script in src as `graph_communities.py` and its results exported to the `results/` folder).
 
-6.  **`random_graphs_comparation.ipynb`**: Comparative analysis between our real-world trade network and theoretical models (Erdős-Rényi, Watts-Strogatz, and Barabási-Albert) to prove non-random topology (subsequently translated as a script in src as `random_graphs_comparation.py` and its results exported to the `results/` folder).
+6.  **`random_graphs_comparison.ipynb`**: Comparative analysis between our real-world trade network and theoretical models (Erdős-Rényi, Watts-Strogatz, and Barabási-Albert) to prove non-random topology (subsequently translated as a script in src as `random_graphs_comparison.py` and its results exported to the `results/` folder).
 
 7.  **`final_reporter.py`**: A master script to gather all metrics and generate a unified summary of the graph, exported to the `results/` folder.
