@@ -2,6 +2,7 @@
 
 This repository contains a comprehensive social network analysis project for the **Social Computing and Personalization** course at the **Technical University of Madrid (UPM)**. The project focuses on leveraging advanced graph theory and GPU-accelerated computing to extract insights from real-world complex systems.
 
+
 ## Project Overview: World Trade Web (WTW) Analysis
 
 The **World Trade Web** is a complex directed and weighted network where nodes represent sovereign nations and edges represent synchronized trade flows. Unlike simple graphs, the WTW exhibits a **"Rich-Club"** phenomenon and a core-periphery structure that defines the global economic hierarchy.
@@ -20,6 +21,7 @@ The analysis includes:
 * **Community Detection:** Clustering analysis using the Louvain Method to identify functional sub-groups.
 * **Robustness Testing:** Evaluating network stability against targeted attacks on high-betweenness hubs.
 
+
 ## Technical Stack
 
 * **Language:** Python 3.10
@@ -27,6 +29,7 @@ The analysis includes:
 * **GPU Acceleration:** [NVIDIA RAPIDS cuGraph](https://rapids.ai/libcugraph.html) (via NetworkX Dispatching)
 * **Visualization:** Gephi (static) and PyVis (interactive HTML)
 * **Environment Management:** Conda
+
 
 ## Hardware Acceleration (RTX 50-Series Blackwell)
 
@@ -38,6 +41,7 @@ This project is optimized for high-performance computing. It utilizes **NetworkX
 * **Backend:** `nx-cugraph`
 
 > **Note on Reproducibility:** The code is designed to be hardware-agnostic. If a compatible NVIDIA GPU is not detected, NetworkX will automatically fallback to CPU execution without any code modifications.
+
 
 ## Getting Started
 
@@ -78,5 +82,29 @@ This project uses the **[BACI International Trade Database (HS92 Revision)](http
     data/               # Raw and processed datasets.
     notebooks/          # Exploratory Data Analysis (Jupyter Notebooks).
     results/            # Visualizations and final report.
+    src/                # Production-ready Python scripts modularized for reusability.
     environment.yml     # Conda environment specification.
     README.md           # Project documentation.
+
+
+## Project Roadmap & Navigation Guide
+
+This section helps you understand the logical flow of the analysis and the purpose of each file in the repository.
+
+### Execution Workflow (Notebooks and Scripts)
+
+To replicate the study, notebooks and scripts should be executed in the following order:
+
+1.  **`data_processing_pipeline_gist.ipynb`**: Initial data loading and cleaning pipeline (subsequently translated as a script in src as `data_processing.py` and its results exported to the `data/processed/` folder).
+
+2.  **`graph_generation.ipynb`** and **`sepecific_product_graph_generation.ipynb`**: Graph generation pipeline from the processed data, as a general graph with all the products and as a graph with one specific product, respectively (subsequently translated as a script in src as `graph_generation.py` and its results exported to the `data/processed/` folder).
+
+3.  **`map_graph_visualization.ipynb`**: The pipeline of the High-level geographic visualization of the resulting trade blocks (subsequently transalded as a script in src as `graph_map_visualization.py` and its results exported as a html to the `results/` folder).
+
+4.  **`graph_metrics.ipynb`**: Basic analysis of the key metrics of the graph (subsequently translated as a script in src as `graph_metrics.py` and its results exports to the `results/` folder).
+
+5.  **`graph_communities.ipynb`**: Implementation of community detection algorithms, such as Louvain, Girvan-Newman, and InfoMap (subsequently translated as a script in src as `graph_communities.py` and its results exported to the `results/` folder).
+
+6.  **`random_graphs_comparation.ipynb`**: Comparative analysis between our real-world trade network and theoretical models (Erdős-Rényi, Watts-Strogatz, and Barabási-Albert) to prove non-random topology (subsequently translated as a script in src as `random_graphs_comparation.py` and its results exported to the `results/` folder).
+
+7.  **`final_reporter.py`**: A master script to gather all metrics and generate a unified summary of the graph, exported to the `results/` folder.
