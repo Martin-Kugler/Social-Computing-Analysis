@@ -1,0 +1,18 @@
+{
+    "transitivity": 0.24935962120624078,
+    "reciprocity": 0.23677979479084452,
+    "diameter_scc": 1998.1048884121633,
+    "average_geodesic_path_scc": 33.59874614625635,
+    "average_degrees": {
+        "Num_Exports": 7.323699421965318,
+        "Num_Imports": 7.323699421965318,
+        "Amount_Exports": 7562504.085768788,
+        "Amount_Imports": 7562504.085768785
+    },
+    "components": {
+        "num_weak_components": 1,
+        "num_strong_components": 62,
+        "largest_weak_component_size": 173,
+        "largest_strong_component_size": 112
+    }
+}

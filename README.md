@@ -99,7 +99,7 @@ To replicate the study, notebooks and scripts should be executed in the followin
 
 2.  **`graph_generation.ipynb`** and **`sepecific_product_graph_generation.ipynb`**: Graph generation pipeline from the processed data, as a general graph with all the products and as a graph with one specific product, respectively (subsequently translated as a script in src as `graph_generation.py` and its results exported to the `data/processed/` folder).
 
-3.  **`map_graph_visualization.ipynb`**: The pipeline of the High-level geographic visualization of the resulting trade blocks (subsequently transalded as a script in src as `graph_map_visualization.py` and its results exported as a html to the `results/` folder).
+3.  **`graph_map_visualization.ipynb`**: The pipeline of the High-level geographic visualization of the resulting trade blocks (subsequently transalded as a script in src as `graph_map_visualization.py` and its results exported as a html to the `results/` folder).
 
 4.  **`graph_metrics.ipynb`**: Basic analysis of the key metrics of the graph (subsequently translated as a script in src as `graph_metrics.py` and its results exports to the `results/` folder).
 
