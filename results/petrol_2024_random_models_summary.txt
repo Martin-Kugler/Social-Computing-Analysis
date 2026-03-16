@@ -1,0 +1,8 @@
+Random Models Comparison for: petrol_2024
+------------------------------------------------------------
+Original Graph -> C: 0.418138 | L: 2.475803
+Erdos-Renyi   -> C: 0.073508 | L: 2.317986
+Barabasi-Albert -> C: 0.146428 | L: 2.303267
+Watts-Strogatz  -> C: 0.509496 | L: 2.855827
+Plot saved at: results/petrol_2024_random_models_distributions.png
+JSON summary saved at: results/petrol_2024_random_models_summary.json

@@ -1,0 +1,15 @@
+Metrics Report for: world_trade_network_petrol_2024.gexf
+--------------------------------------------------
+
+### 1) The Algorithm of Louvain:
+6 Louvain communities detected
+Modularity = 0.39435707534547565
+
+### 2) Algorithm of Girvan-Newman:
+12 Girvan-Newman communities detected
+Modularity = 0.00927465949139733
+
+### 3) InfoMap Algorithm:
+23 InfoMap communities detected
+Modularity = 0.24996122600580345
+

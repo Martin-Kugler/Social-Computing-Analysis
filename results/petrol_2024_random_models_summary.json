@@ -1,0 +1,35 @@
+{
+    "graph_name": "petrol_2024",
+    "base_graph": {
+        "nodes": 173,
+        "edges": 1117,
+        "average_degree": 12.913294797687861,
+        "clustering": 0.4181384866329488,
+        "average_path_length": 2.475803199354752
+    },
+    "erdos_renyi": {
+        "p": 0.07507729533539455,
+        "nodes": 173,
+        "edges": 1063,
+        "clustering": 0.07350757635301015,
+        "average_path_length": 2.3179862884796343
+    },
+    "barabasi_albert": {
+        "m": 6,
+        "nodes": 173,
+        "edges": 1002,
+        "clustering": 0.14642836526775901,
+        "average_path_length": 2.3032665680871083
+    },
+    "watts_strogatz": {
+        "k": 12,
+        "p": 0.1,
+        "nodes": 173,
+        "edges": 1038,
+        "clustering": 0.5094961236579735,
+        "average_path_length": 2.855827396155397
+    },
+    "artifacts": {
+        "plot": "results/petrol_2024_random_models_distributions.png"
+    }
+}
